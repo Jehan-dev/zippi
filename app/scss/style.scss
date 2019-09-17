@@ -55,9 +55,14 @@
     max-width: 417px;
 }
 
+.header__btn {
+    margin-left: 4px;
+}
+
 .header__btn,
 .welcome__item-btn,
-.project__item-btn {
+.project__item-btn,
+.pricing__item-btn {
     text-align: center;
     background-color: $yellow;
     display: inline-block;
@@ -76,9 +81,9 @@
 }
 
 .header__btn:hover,
-.welcome__item-btn:hover {
+.welcome__item-btn:hover,
+.pricing__item-btn:hover {
     background-color: $purple;
-    margin-left: 4px;
 
     a {
         color: #fff;
@@ -234,6 +239,7 @@
 
 .project__item:hover {
     transition: all .3s;
+
     .project__item-wrapper {
         background-color: $yellow;
     }
@@ -288,4 +294,63 @@
             color: #fff;
         }
     }
+}
+
+.pricing {
+    background-color: $bg;
+    padding-bottom: 87px;
+}
+
+.pricing__title {
+    text-align: center;
+    color: $text;
+    font-family: Montserrat;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.pricing__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__item {
+    padding: 0px 56px;
+    max-width: 242px;
+    ul {
+        margin-bottom: 24px;
+    }
+
+    li {
+        text-align: center;
+        color: $text;
+        font-family: 'Helvetica';
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
+
+.pricing__item-title {
+    width: 140px;
+    color: $text;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.pricing__item-cost {
+    text-align: center;
+    color: rgba($text, .61);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 21px;
+}
+
+.pricing__border {
+    border-right: 2px solid rgba(#000,  .3);
+    border-left: 2px solid rgba(#000, .3);
 }
