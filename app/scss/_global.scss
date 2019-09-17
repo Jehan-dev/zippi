@@ -7,21 +7,33 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
 a {
     display: inline-block;
     text-decoration: none;
+    font-family: 'Montserrat',
+    sans-serif;
+    color: #fff;
 }
+
 ul,
 li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-body {
 
+body {
+    font-size: 18px;
+    font-family: 'Roboto',
+    sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: $text;
 }
+
 .container {
-    max-width: 1200px;
+    max-width: 707px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 7px;
 }
