@@ -354,3 +354,125 @@
     border-right: 2px solid rgba(#000,  .3);
     border-left: 2px solid rgba(#000, .3);
 }
+
+.video {
+    background-color: $purple;
+    padding-top: 87px;
+    padding-bottom: 116px;
+}
+.video__title {
+    text-align: center;
+    color: #fefefe;
+    font-family: 'Montserrat';
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 41px;
+}
+.video__inner {
+}
+.video__item-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 690px;
+    min-height: 461px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-bg1 {
+    background-image: url(../images/video1.jpg);
+}
+
+.video-bg2 {
+    background-image: url(../images/video2.jpg);
+}
+
+.video-bg3 {
+    background-image: url(../images/video3.jpg);
+}
+.video__item-text {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    color: #fefefe;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 23px;
+}
+.team {
+    background-color: $bg;
+    padding-top: 71px;
+    padding-bottom: 75px;
+}    
+.team__title {
+    text-align: center;
+    margin-bottom: 44px;
+    color: $text;
+    font-family: 'Montserrat';
+    font-size: 44px;
+    font-weight: 700;
+}
+.team__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.team__item:nth-child(2), 
+.team__item:nth-child(5) {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.team__item {
+    position: relative;
+    margin-bottom: 64px;
+    > img {
+        width: 173px;
+        height: 173px;
+    }
+}
+
+.team__active,
+.team__item:hover {
+    .team__share {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.team__share {
+    position: absolute;
+    top: 0;
+    width: 173px;
+    height: 173px;
+    background-color: rgba($purple, .9);
+    border-radius: 50%;
+    img {
+        width: 38px;
+        height: 30px;
+    }
+    display: none;
+}
+.team__inner-name {
+    margin-top: 30px;
+    text-align: center;
+    color: $text;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.team__inner-prof {
+    text-align: center;
+    margin-top: 15px;
+    opacity: 0.39;
+    color: $text;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 400;
+}
