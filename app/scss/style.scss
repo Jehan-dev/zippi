@@ -592,7 +592,7 @@
     }
     button {
         position: absolute;
-        right: 68px;
+        right: 74px;
     }
     .sign__btn {
         top: 100px;
@@ -610,7 +610,7 @@
         line-height: 15px;
         font-weight: 700;
         text-transform: uppercase;
-        padding: 22px 0 23px;
+        padding: 21px 0 23px;
         font-family:'Montserrat';
         border: none;
     }
@@ -737,4 +737,57 @@
     font-family: 'Montserrat';
     font-size: 44px;
     font-weight: 700;
+}
+.footer {
+    background-color: $bg;
+    padding: 78px 0px;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__address {
+    max-width: 140px;
+    color: $text;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23.58px;
+    text-align: center;
+}
+.footer__address-title,
+.footer__follow-title,
+.footer__contact-title {
+    color: $text;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.footer__follow {
+    max-width: 106px;
+    text-align: center;
+}
+.footer__follow-link {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+
+.footer__contact {
+    max-width: 116px;
+    text-align: center;
+    a {
+        color: $text;
+        font-family: 'Helvetica';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23.58px;
+    }
 }
