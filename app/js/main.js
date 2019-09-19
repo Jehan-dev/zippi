@@ -13,6 +13,16 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
+        responsive: [{
+                    breakpoint: 900,
+                    settings: {
+                        centerPadding: '50px',
+                    },
+                    breakpoint: 694,
+                        settings: {
+                            centerMode: false,
+                        }
+                }],
     })
 
     $('.life__inner').slick({
@@ -23,6 +33,12 @@ $(function () {
         asNavFor: '.life__nav',
         nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
         prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+        responsive: [{
+            breakpoint: 604,
+            settings: {
+                arrows: false,
+            },
+        }]
     }),
     $('.life__nav').slick({
         slidesToShow: 5,
@@ -30,6 +46,10 @@ $(function () {
         asNavFor: '.life__inner',
         centerMode: true,
         focusOnSelect: true,
+    });
+
+    $('.header__menu-btn').on('click', function () {
+        $('.header__nav > ul').slideToggle();
     });
 
 })

@@ -37,6 +37,18 @@
     }
 }
 
+.header__menu-btn {
+    width: 30px;
+    display: none;
+}
+
+.header__menu-row {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
 .header__title {
     width: 100%;
     color: #ffffff;
@@ -163,14 +175,19 @@
         position: absolute;
         right: 0;
         top: -19px;
-        max-width: 188px;
-        min-height: 195px;
+        width: 188px;
+        height: 195px;
     }
 }
 
 .welcome__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.welcome__item {
+    max-width: 156px;
     text-align: center;
 }
 
@@ -318,7 +335,6 @@
 }
 
 .pricing__item {
-    padding: 0px 56px;
     max-width: 242px;
 
     ul {
@@ -356,6 +372,8 @@
 .pricing__border {
     border-right: 2px solid rgba(#000, .3);
     border-left: 2px solid rgba(#000, .3);
+    padding-right: 58px;
+    padding-left: 58px;
 }
 
 .video {
@@ -372,8 +390,6 @@
     font-weight: 700;
     margin-bottom: 41px;
 }
-
-.video__inner {}
 
 .video__item-img {
     background-repeat: no-repeat;
@@ -568,15 +584,18 @@
     font-family: 'Montserrat';
     font-size: 44px;
     font-weight: 700;
+    line-height: 53px;
 }
 
 .sign__form {
     form {
+        max-width: 600px;
+        width: 100%;
         position: relative;
     }
     
     input {
-        max-width: 546px;
+        max-width: 550px;
         width: 100%;
         background-color: $bg;
         padding: 17px 147px 19px 15px;
@@ -592,7 +611,7 @@
     }
     button {
         position: absolute;
-        right: 74px;
+        right: 0px;
     }
     .sign__btn {
         top: 100px;
@@ -610,7 +629,7 @@
         line-height: 15px;
         font-weight: 700;
         text-transform: uppercase;
-        padding: 21px 0 23px;
+        padding: 21px 0 21px;
         font-family:'Montserrat';
         border: none;
     }
@@ -691,7 +710,6 @@
     padding-top: 51px;
     padding-left: 43px;
     form {
-        width: 100%;
         label {
             color: #323232;
             font-family: 'Montserrat';
@@ -718,7 +736,7 @@
             display: inline-block;
             background-color: $purple;
             color: #fff;
-            width: 311px;
+            max-width: 311px;
             border-radius: 3px;
             font-size: 10px;
             line-height: 15px;
@@ -727,6 +745,7 @@
             padding: 22px 0 23px;
             font-family: 'Montserrat';
             border: none;
+            width: 100%;
         }
     }
 }
